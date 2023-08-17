@@ -1,37 +1,51 @@
 <!DOCTYPE html>
 
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="images/weather.png">
-        <title>Weather App</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/weather.png">
+    <title>Weather App</title>
+</head>
 
 
 
-    <div class="card">
-        <div class="search">
-            <input id="inp" type="text" name="" placeholder="Enter Your City" spellcheck="false">
-            <button onclick="cityName()" id="searchBtn"> <img src="images/search.png" alt=""></button>
-        </div>
+<div class="card">
+    <div class="search">
+        <input list="nameList" id="inp" type="text" name="" placeholder="Enter Your City" spellcheck="false">
+        <datalist id="nameList">
+            <option value="Ahmedabad">
+            <option value="Bhuj">
+            <option value="Vadodara">
+            <option value="Mumbai">
+            <option value="Gandhinagar">
+            <option value="Bangalore">
+            <option value="Indore">
+            <option value="Pune">
+            <option value="Kolkata">
 
 
-        <div class="weather">
-            <img src="images/rain.png" alt="" class="weather-icon">
-            <h1 class="temp"></h1>
-            <h2 class="city" id="cityName"></h2>
 
-            <div class="details">
-                <div class="col">
-                    <img src="images/humidity.png" alt="">
-                    <div>
-                        <p class="humidity"></p>
-                        <p>Humidity</p>
-                    </div>
+        </datalist>
+        <button onclick="cityName()" id="searchBtn"> <img src="images/search.png" alt=""></button>
+    </div>
+
+
+    <div class="weather">
+        <img src="images/rain.png" alt="" class="weather-icon">
+        <h1 class="temp"></h1>
+        <h2 class="city" id="cityName"></h2>
+
+        <div class="details">
+            <div class="col">
+                <img src="images/humidity.png" alt="">
+                <div>
+                    <p class="humidity"></p>
+                    <p>Humidity</p>
                 </div>
-            
+            </div>
+
 
 
 
@@ -45,18 +59,18 @@
         </div>
 
     </div>
-    </div>
+</div>
 
 
-    </body>
+</body>
 
-    <script src="script.js"> 
-    
-    
-    </script>
+<script src="script.js">
 
 
+</script>
 
-       
 
-    </html>
+
+
+
+</html>
