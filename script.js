@@ -70,6 +70,7 @@ async function checkWeather(city) {
 
 }
 
+
 function cityName() {
     checkWeather(searchBox.value);
 
